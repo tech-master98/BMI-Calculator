@@ -11,12 +11,15 @@ A simple BMI (Body Mass Index) calculator in vanilla JS.
   Save history of BMI and body fat result.
 
 
-#Tech Stack
+#Tech Stack: 
 
    HTML5 
-   Animation CSS 
+   
+   Animation CSS
+   
    Javascript :  
-      Concept Used :-   
+   
+   Concept Used :-   
          Event Handling:
         
                    The code attaches event listeners to the form's submit and reset events.
