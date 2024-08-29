@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+
+
+
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+    font-family: "Jost", sans-serif;
+  }
+  
+
+
+
+  body {
+	background: linear-gradient(-45deg, #9102ff, #e73c7e, #23a6d5, #d9ff00);
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+    display: grid;
+    place-items: center;
+	height: 20vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+h1 {
+ 
+    font-family:'Verdana';
+    text-align: center;
+    font-size: 50px;
+     
+    
+
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(/img.jpg) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  
+  
+ 
+
+  
+  .container {
+    width: 100vw; /* Adjust to fit smaller screens */
+    max-width: 620px;
+    background: #fff;
+    margin-top: 40px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+    display: grid;
+    gap: 1rem;
+  }
+
+.calculator {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculator label {
+  flex: 0 1 120px;
+  font-weight: 800;
+}
+
+.calculator input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #555;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.calculator button {
+  width: 30.5%;
+  border-radius: 5px;
+  margin-left: 8rem;
+  
+  cursor: pointer;
+  padding: 10px;
+  background-color: #00ff77;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+@-webkit-keyframes stripe-slide {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  @keyframes stripe-slide {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+ 
+  .btn {
+    overflow: visible;
+    margin: 0;
+  
+    border: 0;
+    background: transparent;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    -moz-user-select: text;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    background-color: #2100f9;
+    color: #c009cd;
+    border: 2px solid #ff1a1a;
+   
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+  }
+  .btn:-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  .btn--stripe {
+    overflow: hidden;
+    position: relative;
+  }
+  .btn--stripe:after {
+    content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, #d32e2e, #f700b1 1px, transparent 2px, transparent 5px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-top: 1px solid #666;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: 7px 7px;
+  }
+  .btn--stripe:hover {
+    background-color: #dd00ff;
+    color: #efefef;
+    border-color: #000;
+  }
+  .btn--stripe:hover:after {
+    background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+    border-top: 1px solid #000;
+    -webkit-animation: stripe-slide 12s infinite linear forwards;
+            animation: stripe-slide 12s infinite linear forwards;
+  }
+  .btn--large {
+    width: 50%;
+  }
+  .btn--radius {
+    border-radius: 36px;
+  }
+
+.calculator button[type="reset"] {
+  margin-left: 8.6rem;
+  background: #d2a232;
+}
+
+.calculator button:hover {
+  filter: brightness(120%);
+}
+
+.output {
+  text-align: center;
+}
+
+.output #bmi {
+  font-size: 5rem;
+}
+
+.output #desc strong {
+  text-transform: uppercase;
+}
+
+.bmi-scale {
+  display: flex;
+}
+
+.bmi-scale div {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color);
+  padding: 10px;
+}
+
+.bmi-scale h4 {
+  font-size: 0.75rem;
+  color: slategray;
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
+
+
+
+.bmi-info {
+    background: #05f8d8;
+    padding: 4rem;
+    border-radius: 10px;
+    margin-top: 6rem;
+    box-shadow: 0 10px 35px rgba(4, 6, 8, 5.1);
+    margin-right: 15rem;
+    margin-left: 15rem;
+    
+    
+  }
+  
+  .bmi-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .bmi-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+
+
+  .calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .calculator label {
+    flex: 0 1 120px;
+    font-weight: 800;
+   
+  }
+  
+  .calculator input, .calculator select {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: #555;
+    font-size: 1.25rem;
+    text-align: center;
+   
+  }
+  
+  .output h3 {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .output #body-fat {
+    font-size: 5rem;
+    
+    text-align: center;
+  }
+  
+
+
+/* Positioning and styling the Save History section */
+.bmi-history-container {
+  position: relative; /* Adjusted to avoid fixed position on small screens */
+  width: 100%; 
+  
+  left: 8%;
+  bottom: 2680%;
+  margin-right: 80rem;
+  transform: translateY(1%);
+  width: 20%;
+  max-height: 900%;
+
+  background-color: #f5f5f5;
+  border: 1px solid #ed0303;
+  padding: 20px;
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 8.1);
+  overflow-y: auto; /* Scroll if content overflows */
+  border-radius: 10px;
+  
+ 
+}
+
+/* Heading styling */
+.bmi-history-container h2 {
+  margin-top: 1rem;
+  text-align: center;
+  
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Styling for list */
+.bmi-history-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+/* Styling for list items */
+.bmi-history-container li {
+  margin: 5px 0;
+  padding: 8px;
+  background-color: rgba(141, 152, 132, 0.674);
+  border-radius: 5px;
+}
+
+/* Button styling */
+#clear-history-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1086px) {
+  .container {
+    width: 20%;
+    padding: 2rem;
+    margin-right: 110rem;
+   
+    
+  }
+
+  .bmi-history-container {
+    width: 7%;
+    left: 2%;
+    bottom: 2980%;
+    
+   
+ 
+   
+    position: relative; 
+    max-height: 900%;
+    overflow-y: auto;
+    margin-right: 169rem; 
+
+   
+    
+
+    
+}
+
+.bmi-info {
+
+
+  width: 26%;
+  margin-right: 139.9rem;
+  margin-left: 21rem;
+    
+
+}
+
+}
