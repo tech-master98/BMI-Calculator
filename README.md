@@ -18,9 +18,8 @@ A simple BMI (Body Mass Index) calculator in vanilla JS.
    Animation CSS
    
    Javascript :  
-   
-   Concept Used :-   
-         Event Handling:
+      Concept Used :-  
+            Event Handling:
         
                    The code attaches event listeners to the form's submit and reset events.
                    onFormSubmit: This function is executed when the form is submitted.
