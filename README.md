@@ -2,7 +2,7 @@
 
 A simple BMI (Body Mass Index) calculator in vanilla JS.
 
-#Features
+# Features
 
   Calculate BMI by weight (in kg) and height (in cm).
   Interpret the calculated BMI.
@@ -11,7 +11,7 @@ A simple BMI (Body Mass Index) calculator in vanilla JS.
   Save history of BMI and body fat result.
 
 
-#Tech Stack: 
+# Tech Stack: 
 
    HTML5 
    
