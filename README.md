@@ -12,7 +12,7 @@ A simple BMI (Body Mass Index) calculator in vanilla JS.
   
   ✔Calculate the Body fat Percentage.
   
-  ✔Save history of BMI and body fat results.
+  ✔Save history of BMI and body fat Percentage results.
 
 
 # Tech Stack: 
