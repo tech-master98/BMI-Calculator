@@ -4,11 +4,15 @@ A simple BMI (Body Mass Index) calculator in vanilla JS.
 
 # Features
 
-  Calculate BMI by weight (in kg) and height (in cm).
-  Interpret the calculated BMI.
-  Visualize the interpretation with a color-coded BMI scale.
-  Calcute the Body fat Percentage.
-  Save history of BMI and body fat result.
+  ✔Calculate BMI by weight (in kg) and height (in cm).
+  
+  ✔Interpret the calculated BMI.
+  
+  ✔Visualize the interpretation with a color-coded BMI scale.
+  
+  ✔Calculate the Body fat Percentage.
+  
+  ✔Save history of BMI and body fat results.
 
 
 # Tech Stack: 
